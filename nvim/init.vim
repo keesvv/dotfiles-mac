@@ -1,0 +1,1 @@
+hi StatusLine cterm=bold
