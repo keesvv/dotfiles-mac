@@ -6,6 +6,28 @@ if status --is-interactive
 	alias ls='ls --color'
 	alias l='ls -lA'
 
+	## exa
+	if type -q exa
+		alias ls='exa --icons'
+		alias l='ls -l'
+	end
+
+	## bat
+	if type -q bat
+		alias cat='bat'
+	end
+
+	## zoxide
+	if type -q z
+		alias cd='z'
+	end
+
+	# Search
+	## ripgrep
+	if type -q rg
+		alias grep='rg'
+	end
+
 	# Git
 	alias gs='git status'
 	alias gb='git branch'
