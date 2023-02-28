@@ -3,13 +3,18 @@ if status --is-interactive
 	alias vi=$EDITOR
 
 	# File management
-	alias ls='ls --color'
-	alias l='ls -lA'
+	alias ls='ls --color -l'
+	alias l='ls -A'
+
+	## trash
+	if type -q trash
+		alias rm='trash -F'
+	end
 
 	## exa
 	if type -q exa
-		alias ls='exa --icons'
-		alias l='ls -l'
+		alias ls='exa --icons -l'
+		alias l='ls -a'
 	end
 
 	## bat
