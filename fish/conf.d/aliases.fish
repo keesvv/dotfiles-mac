@@ -15,6 +15,7 @@ if status --is-interactive
 	if type -q exa
 		alias ls='exa --icons -l'
 		alias l='ls -a'
+		alias tree='ls -T -L 5'
 	end
 
 	## bat
