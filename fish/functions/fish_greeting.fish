@@ -1,5 +1,5 @@
 function fish_greeting
-    if type -q fortune
-        fortune -s wisdom
+    if type -q lot
+	lot
     end
 end
